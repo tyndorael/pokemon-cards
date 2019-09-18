@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
@@ -7,28 +6,23 @@ class App extends Component {
     super();
 
     this.state = {
-      monsters: [
-        {
-          id: 'fr1',
-          name: 'Frankestein'
-        },
-        {
-          id: 'dr1',
-          name: 'Dracula'
-        },
-        {
-          id: 'zo1',
-          name: 'Zombie'
-        }
-      ]
+      cards: []
     };
+  }
+
+  componentDidMount() {
+    fetch('https://api.pokemontcg.io/v1/cards?name=pikachu')
+    .then(response => response.json())
+    .then(data => {
+      this.setState({ cards: data.cards})
+    });
   }
 
   render() {
     return (
       <div className="App">
         {
-          this.state.monsters.map(monster => <h1 key={monster.id}> {monster.name} </h1>)
+          this.state.cards.map(card => <h1 key={card.id}> {card.name} </h1>)
         }
       </div>
     );
