@@ -12,14 +12,21 @@ class App extends Component {
       searchField: '',
       cards: []
     };
+
+    // set context (this) to the function
+    this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
-    fetch('https://api.pokemontcg.io/v1/cards?name=raichu')
+    fetch('https://api.pokemontcg.io/v1/cards?name=charmander')
       .then(response => response.json())
       .then(data => {
         this.setState({ cards: data.cards })
       });
+  }
+
+  handleChange(e) {
+    this.setState({ searchField: e.target.value });
   }
 
   render() {
@@ -32,7 +39,7 @@ class App extends Component {
       <div className="App">
         <SearchBox
           placeholder="search cards by set"
-          handleChange={e => this.setState({ searchField: e.target.value })}/>
+          handleChange={this.handleChange}/>
         <CardList cards={filteredCards} />
       </div>
     );
