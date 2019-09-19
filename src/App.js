@@ -12,9 +12,6 @@ class App extends Component {
       searchField: '',
       cards: []
     };
-
-    // set context (this) to the function
-    this.handleChange = this.handleChange.bind(this);
   }
 
   componentDidMount() {
@@ -25,7 +22,8 @@ class App extends Component {
       });
   }
 
-  handleChange(e) {
+  // arrow function do context binding automatically
+  handleChange = (e) => {
     this.setState({ searchField: e.target.value });
   }
 
