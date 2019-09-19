@@ -23,7 +23,7 @@ class App extends Component {
   }
 
   // arrow function do context binding automatically
-  handleChange = (e) => {
+  handleChange = e => {
     this.setState({ searchField: e.target.value });
   }
 
@@ -35,9 +35,10 @@ class App extends Component {
 
     return (
       <div className="App">
+        <h1>Pokemon Cards</h1>
         <SearchBox
           placeholder="search cards by set"
-          handleChange={this.handleChange}/>
+          handleChange={this.handleChange} />
         <CardList cards={filteredCards} />
       </div>
     );
