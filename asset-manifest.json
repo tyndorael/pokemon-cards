@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pokemon-cards/static/css/main.43163c78.chunk.css",
-    "main.js": "/pokemon-cards/static/js/main.87fc7bc3.chunk.js",
-    "main.js.map": "/pokemon-cards/static/js/main.87fc7bc3.chunk.js.map",
+    "main.css": "/pokemon-cards/static/css/main.7badcaa4.chunk.css",
+    "main.js": "/pokemon-cards/static/js/main.39eb6b9c.chunk.js",
+    "main.js.map": "/pokemon-cards/static/js/main.39eb6b9c.chunk.js.map",
     "runtime~main.js": "/pokemon-cards/static/js/runtime~main.16314df7.js",
     "runtime~main.js.map": "/pokemon-cards/static/js/runtime~main.16314df7.js.map",
     "static/js/2.8a41e32c.chunk.js": "/pokemon-cards/static/js/2.8a41e32c.chunk.js",
     "static/js/2.8a41e32c.chunk.js.map": "/pokemon-cards/static/js/2.8a41e32c.chunk.js.map",
     "index.html": "/pokemon-cards/index.html",
-    "precache-manifest.ab538c9d9bf12269a154823f39c22e80.js": "/pokemon-cards/precache-manifest.ab538c9d9bf12269a154823f39c22e80.js",
+    "precache-manifest.12bb01f075d66d8f1565d673d9f279c0.js": "/pokemon-cards/precache-manifest.12bb01f075d66d8f1565d673d9f279c0.js",
     "service-worker.js": "/pokemon-cards/service-worker.js",
-    "static/css/main.43163c78.chunk.css.map": "/pokemon-cards/static/css/main.43163c78.chunk.css.map"
+    "static/css/main.7badcaa4.chunk.css.map": "/pokemon-cards/static/css/main.7badcaa4.chunk.css.map"
   }
 }
