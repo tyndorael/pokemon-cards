@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "042871cda84cff31b5a6527dc5103aa4",
+    "revision": "ec6f6ac0e25654f054bd4033383877ef",
     "url": "/pokemon-cards/index.html"
   },
   {
-    "revision": "22b174b5d8dd6bd923ea",
+    "revision": "198a6b303d59e788fe01",
     "url": "/pokemon-cards/static/css/main.7badcaa4.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/pokemon-cards/static/js/2.8a41e32c.chunk.js"
   },
   {
-    "revision": "22b174b5d8dd6bd923ea",
-    "url": "/pokemon-cards/static/js/main.39eb6b9c.chunk.js"
+    "revision": "198a6b303d59e788fe01",
+    "url": "/pokemon-cards/static/js/main.2d71f5a1.chunk.js"
   },
   {
     "revision": "c68c847c6c103b5f698a",
