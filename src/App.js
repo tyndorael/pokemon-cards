@@ -15,11 +15,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    fetch("https://api.pokemontcg.io/v1/cards?name=pikachu")
-      .then(response => response.json())
-      .then(data => {
-        this.setState({ cards: data.cards });
-      });
+    this.searchCardsByPokemon("pikachu");
   }
 
   searchCardsByPokemon = name => {
