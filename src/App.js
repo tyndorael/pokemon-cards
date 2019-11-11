@@ -22,16 +22,25 @@ class App extends Component {
       });
   }
 
+  searchCardsByPokemon = name => {
+    fetch(`https://api.pokemontcg.io/v1/cards?name=${name}`)
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ cards: data.cards })
+      });
+  }
+
   // arrow function do context binding automatically
   handleChange = e => {
-    this.setState({ searchField: e.target.value });
+    this.setState({ searchField: e.target.value }, () => {
+      if (this.state.searchField.length > 2) {
+        this.searchCardsByPokemon(this.state.searchField);
+      }
+    });
   }
 
   render() {
-    const { searchField, cards } = this.state;
-    const filteredCards = cards.filter(card =>
-      card.set.toLowerCase().includes(searchField.toLowerCase())
-    );
+    const { cards } = this.state;
 
     return (
       <div className="App">
@@ -39,7 +48,7 @@ class App extends Component {
         <SearchBox
           placeholder="search cards by set"
           handleChange={this.handleChange} />
-        <CardList cards={filteredCards} />
+        <CardList cards={cards} />
       </div>
     );
   }
